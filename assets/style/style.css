@@ -1,0 +1,154 @@
+:root{
+    --primary-LightRed:hsl(0, 100%, 67%);
+    --primary-OrangeyYellow:hsl(39, 100%, 56%);
+    --primary-GreenTeal:hsl(166, 100%, 37%);
+    --primary-CobaltBlue:hsl(234, 85%, 45%);
+    --neutral-white:(0, 0%, 100%);
+    --neutral-PaleBlue:hsl(221, 100%, 96%);
+    --neutral-LightLevender:hsl(241, 100%, 89%);
+    --neutral-DarkGrayBlue:hsl(224, 30%, 27%);
+    --gradient-1:linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    --gradient-2:linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+/* Cıntainer Width */
+.container{
+    width: 80%;
+}
+@media(max-width: 576px){
+    .container{
+        width: 60%;
+    }
+}
+@media(min-width: 576px){
+    .container{
+        width: 50%;
+    }
+}
+@media(min-width: 768px){
+    .container{
+        width: 60%;
+    }
+}
+@media(min-width: 992px){
+    .container{
+        width: 60%;
+    }
+}
+@media(min-width: 1200px){
+    .container{
+        width: 33%;
+    }
+}
+/* Right Card */
+.reaction{
+    background-color:hsla(0, 100%, 67%,0.1) ;
+}
+.reaction h4{
+    color: var(--primary-LightRed);
+    font-size: 1.1rem;
+}
+.memory{
+    background-color:hsla(39, 100%, 56%,0.1) ;
+}
+.memory h4{
+    color: var(--primary-OrangeyYellow);
+    font-size: 1.1rem;
+}
+.verbal{
+    background-color: hsla(166, 100%, 37%,0.1);
+}
+.verbal h4{
+    color: var(--primary-GreenTeal);
+    font-size: 1.1rem;
+}
+.visual{
+    background-color:hsla(234, 85%, 45%,0.1);
+}
+.visual h4{
+    color: var(--primary-CobaltBlue);
+    font-size: 1.1rem;
+}
+span{
+    font-size: 14px;
+    color: var(--neutral-DarkGrayBlue);
+}
+span.light{
+    color: gray!important;
+
+}
+button{
+    background-color: var(--neutral-DarkGrayBlue);
+    color: white!important;
+    border: none;
+    padding: 11px;
+    transition: all 0.7s;
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    -ms-transition: all 0.7s;
+    -o-transition: all 0.7s;
+}
+button:hover{
+    background: var(--gradient-1);
+}
+/* Left Card */
+.row .col:first-child .card{
+    background: var(--gradient-1);
+}
+.col:first-child .card{
+    text-align: center;
+}
+h1{
+    color: var(--neutral-LightLevender)!important;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+.col:first-child .card h2, p{
+    color:var(--neutral-PaleBlue) ;
+}
+.col:first-child .card p:last-child{
+    color: var(--neutral-LightLevender);
+}
+
+.card .not .point{
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+.card .not{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 70%;
+    height: 35%;
+    background:var(--gradient-2);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.sub{
+    position: absolute;
+    top: 100px;
+    font-size: 14px;
+}
+@media(max-width: 768px){
+    .sub{
+        top: 70px;
+    }
+    .row{
+        background-color: white;
+    }
+}
